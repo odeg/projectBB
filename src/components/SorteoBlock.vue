@@ -13,7 +13,7 @@
         <span class="text-h5 font-weight-bold text-primary opacity-transition">
           {{ nombreTemporal }}
         </span>
-        <div class="text-caption text-textSecondary mt-1">Sorteando...</div>
+        <div class="text-caption text-textSecondary mt-1">Sorteando.....</div>
       </div>
       
       <div v-else-if="ganador" class="winner-info animate-winner">

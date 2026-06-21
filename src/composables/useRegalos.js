@@ -6,11 +6,11 @@ export function useRegalos() {
   const loading = ref(false)
   const error = ref(null)
 
-  const cargarRegalos = async () => {
+  const cargarRegalos = async (team) => {
     loading.value = true
     error.value = null
     try {
-      regalos.value = await regalosService.obtenerRegalosDisponibles()
+      regalos.value = await regalosService.obtenerRegalosDisponibles(team)
     } catch (err) {
       error.value = err.message || 'Error desconocido al cargar los regalos.'
     } finally {

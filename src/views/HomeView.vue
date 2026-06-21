@@ -27,11 +27,6 @@
          Muestra el agradecimiento, el evento y la ubicación
     ============================================== -->
     <template v-else>
-      <!-- Portada / Invitación (siempre visible) -->
-      <section>
-        <AppHero />
-      </section>
-
       <!-- Tarjeta de Agradecimiento y Confirmación -->
       <section class="py-6 px-4">
         <v-container>
@@ -58,7 +53,7 @@
               {{ nombreGuardado ? `¡Ya estás confirmado, ${nombreGuardado}!` : '¡Ya estás confirmado!' }}
             </h3>
 
-            <p class="text-body-2 text-textSecondary mb-4 px-4">
+            <p class="text-h5 font-serif font-weight-bold text-textPrimary mb-2">
               Te esperamos con muchas ganas. Mirá los detalles del evento acá abajo.
             </p>
 
@@ -88,7 +83,6 @@
           </v-card>
         </v-container>
       </section>
-
       <!-- Contador Regresivo (también disponible tras confirmar) -->
       <section class="py-2">
         <CountdownBlock />
@@ -103,6 +97,7 @@
       <section class="py-4">
         <LocationBlock />
       </section>
+
 
       <!-- Galería de Fotos -->
       <section class="py-4">
